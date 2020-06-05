@@ -1,0 +1,263 @@
+*------------------------------------------------------------*
+User:                bioncabrown0
+Date:                May 23, 2020
+Time:                21:08:54
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+          Measurement    Frequency
+ Role        Level         Count
+ 
+TARGET      BINARY           1
+ 
+ 
+ 
+ 
+ 
+                                                                                        BINNED_KS_
+                                                               _KS_PROB_                   PROB_
+Obs     TARGET      TARGETLABEL    _AUR_    _GINI_      KS       CUTOFF     _KS_BIN_      CUTOFF
+ 
+ 1     DEP_DEL15                   0.645     0.291    0.216      0.173        0.214        0.173
+ 
+ 
+ 
+ 
+ 
+                                                                  _VKS_              _VBINNED_
+                                                                  PROB_     _VKS_     KS_PROB_
+Obs     TARGET      TARGETLABEL    _VAUR_    _VGINI_     VKS     CUTOFF_     BIN_     CUTOFF_
+ 
+ 1     DEP_DEL15                    0.637     0.275     0.204     0.171     0.202      0.173
+ 
+ 
+ 
+ 
+ 
+                                                                                        BINNED_KS_
+                                                               _KS_PROB_                   PROB_
+Obs     TARGET      TARGETLABEL    _AUR_    _GINI_      KS       CUTOFF     _KS_BIN_      CUTOFF
+ 
+ 1     DEP_DEL15                   0.646     0.291    0.216       0.18        0.214        0.182
+ 
+ 
+ 
+ 
+ 
+                                                                  _VKS_              _VBINNED_
+                                                                  PROB_     _VKS_     KS_PROB_
+Obs     TARGET      TARGETLABEL    _VAUR_    _VGINI_     VKS     CUTOFF_     BIN_     CUTOFF_
+ 
+ 1     DEP_DEL15                    0.638     0.277     0.205     0.173     0.204      0.182
+ 
+ 
+ 
+ 
+ 
+                                                                                        BINNED_KS_
+                                                               _KS_PROB_                   PROB_
+Obs     TARGET      TARGETLABEL    _AUR_    _GINI_      KS       CUTOFF     _KS_BIN_      CUTOFF
+ 
+ 1     DEP_DEL15                    0.8       0.6     0.443      0.161        0.444        0.17
+ 
+ 
+ 
+ 
+ 
+                                                                  _VKS_              _VBINNED_
+                                                                  PROB_     _VKS_     KS_PROB_
+Obs     TARGET      TARGETLABEL    _VAUR_    _VGINI_     VKS     CUTOFF_     BIN_     CUTOFF_
+ 
+ 1     DEP_DEL15                    0.674     0.349     0.255     0.156     0.253      0.157
+ 
+ 
+ 
+ 
+ 
+                                                                                        BINNED_KS_
+                                                               _KS_PROB_                   PROB_
+Obs     TARGET      TARGETLABEL    _AUR_    _GINI_      KS       CUTOFF     _KS_BIN_      CUTOFF
+ 
+ 1     DEP_DEL15                   0.618     0.236    0.208      0.138        0.203        0.167
+ 
+ 
+ 
+ 
+ 
+                                                                  _VKS_              _VBINNED_
+                                                                  PROB_     _VKS_     KS_PROB_
+Obs     TARGET      TARGETLABEL    _VAUR_    _VGINI_     VKS     CUTOFF_     BIN_     CUTOFF_
+ 
+ 1     DEP_DEL15                    0.614     0.228     0.195     0.197     0.195      0.206
+ 
+ 
+ 
+ 
+ 
+                                                                                        BINNED_KS_
+                                                               _KS_PROB_                   PROB_
+Obs     TARGET      TARGETLABEL    _AUR_    _GINI_      KS       CUTOFF     _KS_BIN_      CUTOFF
+ 
+ 1     DEP_DEL15                   0.547     0.093    0.087      0.152        0.086        0.194
+ 
+ 
+ 
+ 
+ 
+                                                                  _VKS_              _VBINNED_
+                                                                  PROB_     _VKS_     KS_PROB_
+Obs     TARGET      TARGETLABEL    _VAUR_    _VGINI_     VKS     CUTOFF_     BIN_     CUTOFF_
+ 
+ 1     DEP_DEL15                    0.544     0.088     0.082     0.152     0.081      0.194
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Fit Statistics
+Model Selection based on Train: Roc Index (_AUR_)
+ 
+                                                             Train:                          Valid:
+                                                  Train:    Average          Train:         Average          Valid:
+Selected    Model                                   Roc     Squared    Misclassification    Squared    Misclassification
+ Model      Node      Model Description            Index     Error            Rate           Error            Rate
+ 
+   Y        Boost     Gradient Boosting            0.800    0.11513         0.15632         0.12861         0.16308
+            Neural    Neural Network               0.646    0.13175         0.16483         0.13263         0.16483
+            Reg       Regression                   0.645    0.13184         0.16489         0.13272         0.16494
+            Tree2     Interactive DecisionTree     0.618    0.13396         0.16478         0.13432         0.16480
+            Tree      Decision Tree                0.547    0.13433         0.16303         0.13464         0.16329
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Fit Statistics Table
+Target: DEP_DEL15
+ 
+Data Role=Train
+ 
+Statistics                                                            Boost       Neural          Reg        Tree2         Tree
+ 
+Train: Bin-Based Two-Way Kolmogorov-Smirnov Probability Cutoff         0.17         0.18         0.17         0.17         0.19
+Train: Kolmogorov-Smirnov Statistic                                    0.44         0.22         0.22         0.21         0.09
+Train: Akaike's Information Criterion                                   .       59355.10     58230.86          .            .
+Train: Average Squared Error                                           0.12         0.13         0.13         0.13         0.13
+Train: Roc Index                                                       0.80         0.65         0.65         0.62         0.55
+Train: Average Error Function                                           .           0.43         0.43          .            .
+Train: Cumulative Percent Captured Response                           33.01        21.07        20.84        16.19        17.21
+Train: Percent Captured Response                                      13.41         9.67         9.83         8.04         5.43
+Selection Criterion: Train: Roc Index                                  0.80         0.65         0.65         0.62         0.55
+Train: Degrees of Freedom for Error                                     .       67187.00     67765.00          .            .
+Train: Model Degrees of Freedom                                         .         635.00        57.00          .            .
+Train: Total Degrees of Freedom                                    67822.00     67822.00     67822.00     67822.00     67822.00
+Train: Divisor for ASE                                            135644.00    135644.00    135644.00    135644.00    135644.00
+Train: Error Function                                                   .       58085.10     58116.86          .            .
+Train: Final Prediction Error                                           .           0.13         0.13          .            .
+Train: Gain                                                          230.04       110.69       108.38        61.92        72.12
+Train: Gini Coefficient                                                0.60         0.29         0.29         0.24         0.09
+Train: Bin-Based Two-Way Kolmogorov-Smirnov Statistic                  0.44         0.21         0.21         0.20         0.09
+Train: Kolmogorov-Smirnov Probability Cutoff                           0.16         0.18         0.17         0.14         0.15
+Train: Cumulative Lift                                                 3.30         2.11         2.08         1.62         1.72
+Train: Lift                                                            2.68         1.93         1.97         1.61         1.09
+Train: Maximum Absolute Error                                          0.94         0.97         0.97         0.89         0.85
+Train: Misclassification Rate                                          0.16         0.16         0.16         0.16         0.16
+Train: Mean Square Error                                                .           0.13         0.13          .            .
+Train: Sum of Frequencies                                          67822.00     67822.00     67822.00     67822.00     67822.00
+Train: Number of Estimate Weights                                       .         635.00        57.00          .            .
+Train: Root Average Sum of Squares                                     0.34         0.36         0.36         0.37         0.37
+Train: Cumulative Percent Response                                    54.39        34.72        34.34        26.68        28.36
+Train: Percent Response                                               44.21        31.88        32.41        26.49        17.90
+Train: Root Final Prediction Error                                      .           0.37         0.36          .            .
+Train: Root Mean Squared Error                                          .           0.36         0.36          .            .
+Train: Schwarz's Bayesian Criterion                                     .       65149.25     58750.96          .            .
+Train: Sum of Squared Errors                                       15616.42     17871.28     17883.23     18170.56     18220.42
+Train: Sum of Case Weights Times Freq                             135644.00    135644.00    135644.00          .            .
+Train: Number of Wrong Classifications                                  .       11179.00          .            .            .
+ 
+ 
+Data Role=Valid
+ 
+Statistics                                                            Boost       Neural          Reg        Tree2         Tree
+ 
+Valid: Kolmogorov-Smirnov Statistic                                    0.26         0.21         0.20         0.20         0.08
+Valid: Average Squared Error                                           0.13         0.13         0.13         0.13         0.13
+Valid: Roc Index                                                       0.67         0.64         0.64         0.61         0.54
+Valid: Average Error Function                                           .           0.43         0.43          .            .
+Valid: Bin-Based Two-Way Kolmogorov-Smirnov Probability Cutoff         0.16         0.18         0.17         0.21         0.19
+Valid: Cumulative Percent Captured Response                           23.85        19.79        19.53        15.83        16.78
+Valid: Percent Captured Response                                      10.12         9.21         9.08         7.84         5.33
+Valid: Divisor for VASE                                           135652.00    135652.00    135652.00    135652.00    135652.00
+Valid: Error Function                                                   .       58421.78     58456.91          .            .
+Valid: Gain                                                          138.49        97.88        95.28        58.26        67.75
+Valid: Gini Coefficient                                                0.35         0.28         0.28         0.23         0.09
+Valid: Bin-Based Two-Way Kolmogorov-Smirnov Statistic                  0.25         0.20         0.20         0.20         0.08
+Valid: Kolmogorov-Smirnov Probability Cutoff                           0.16         0.17         0.17         0.20         0.15
+Valid: Cumulative Lift                                                 2.38         1.98         1.95         1.58         1.68
+Valid: Lift                                                            2.02         1.84         1.82         1.57         1.07
+Valid: Maximum Absolute Error                                          0.95         0.97         0.97         0.89         0.85
+Valid: Misclassification Rate                                          0.16         0.16         0.16         0.16         0.16
+Valid: Mean Square Error                                                .           0.13         0.13          .            .
+Valid: Sum of Frequencies                                          67826.00     67826.00     67826.00     67826.00     67826.00
+Valid: Root Average Squared Error                                      0.36         0.36         0.36         0.37         0.37
+Valid: Cumulative Percent Response                                    39.30        32.61        32.18        26.08        27.65
+Valid: Percent Response                                               33.35        30.35        29.93        25.84        17.58
+Valid: Root Mean Square Error                                           .           0.36         0.36          .            .
+Valid: Sum of Square Errors                                        17445.88     17991.17     18003.16     18221.30     18263.67
+Valid: Sum of Case Weights Times Freq                             135652.00    135652.00    135652.00          .            .
+Valid: Number of Wrong Classifications                                  .       11180.00          .            .            .
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Event Classification Table
+Model Selection based on Train: Roc Index (_AUR_)
+ 
+Model                                 Data                     Target      False       True        False       True
+Node      Model Description           Role         Target      Label     Negative    Negative    Positive    Positive
+ 
+Reg       Regression                  TRAIN       DEP_DEL15                11095       56558         88          81
+Reg       Regression                  VALIDATE    DEP_DEL15                11086       56547        101          92
+Neural    Neural Network              TRAIN       DEP_DEL15                11095       56562         84          81
+Neural    Neural Network              VALIDATE    DEP_DEL15                11084       56552         96          94
+Boost     Gradient Boosting           TRAIN       DEP_DEL15                10323       56367        279         853
+Boost     Gradient Boosting           VALIDATE    DEP_DEL15                10608       56195        453         570
+Tree2     Interactive DecisionTree    TRAIN       DEP_DEL15                11176       56646          0           0
+Tree2     Interactive DecisionTree    VALIDATE    DEP_DEL15                11178       56648          0           0
+Tree      Decision Tree               TRAIN       DEP_DEL15                10871       56460        186         305
+Tree      Decision Tree               VALIDATE    DEP_DEL15                10873       56446        202         305
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*

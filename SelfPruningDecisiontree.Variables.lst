@@ -1,0 +1,253 @@
+*------------------------------------------------------------*
+User:                bioncabrown0
+Date:                May 02, 2020
+Time:                02:01:16
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+          Measurement    Frequency
+Role         Level         Count
+ 
+ID         INTERVAL           1
+INPUT      INTERVAL          12
+INPUT      NOMINAL            4
+TARGET     BINARY             1
+ 
+ 
+ 
+ 
+Model Events
+ 
+                                     Number
+                      Measurement      of
+ Target      Event       Level       Levels      Order       Label
+ 
+DEP_DEL15      1        BINARY          2      Descending
+ 
+ 
+ 
+ 
+Predicted and decision variables
+ 
+Type           Variable              Label
+ 
+TARGET       DEP_DEL15
+PREDICTED    P_DEP_DEL151    Predicted: DEP_DEL15=1
+RESIDUAL     R_DEP_DEL151    Residual: DEP_DEL15=1
+PREDICTED    P_DEP_DEL150    Predicted: DEP_DEL15=0
+RESIDUAL     R_DEP_DEL150    Residual: DEP_DEL15=0
+FROM         F_DEP_DEL15     From: DEP_DEL15
+INTO         I_DEP_DEL15     Into: DEP_DEL15
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+Variable Importance
+ 
+                                                                                                Ratio of
+                         Number of    Number of                                               Validation
+Variable                 Splitting    Surrogate                            Validation        to Training
+Name            Label      Rules        Rules           Importance         Importance         Importance
+ 
+MAX                          1            3                 1.0000             1.0000             1.0000
+VISIB                        1            2                 0.9643             0.9705             1.0064
+PRCP                         0            2                 0.9136             0.9140             1.0005
+MIN                          1            2                 0.8392             0.8672             1.0334
+TEMP                         0            3                 0.8369             0.8629             1.0310
+DAY_OF_MONTH                 2            2                 0.7716             0.7581             0.9825
+MONTH                        1            4                 0.6340             0.6597             1.0406
+TAXI_OUT                     0            1                 0.5686             0.5749             1.0111
+DEWP                         0            3                 0.5063             0.5509             1.0880
+WDSP                         1            2                 0.4531             0.4298             0.9485
+SLP                          0            1                 0.3086             0.2653             0.8598
+MXSPD                        0            1                 0.3016             0.2593             0.8598
+DAY_OF_WEEK                  0            1                 0.2884             0.3574             1.2392
+ 
+ 
+ 
+Tree Leaf Report
+ 
+                                 Training
+Node               Training       Percent
+ Id     Depth    Observations        1
+ 
+  3       1          59740         0.15
+ 19       4           3936         0.17
+ 29       5           1179         0.22
+ 11       3           1048         0.35
+  8       3            723         0.41
+ 49       6            705         0.35
+  9       3            340         0.64
+ 48       6            151         0.58
+ 
+ 
+ 
+ 
+Fit Statistics
+ 
+Target=DEP_DEL15 Target Label=' '
+ 
+   Fit
+Statistics    Statistics Label                  Train    Validation
+ 
+  _NOBS_      Sum of Frequencies             67822.00      67826.00
+  _MISC_      Misclassification Rate             0.16          0.16
+  _MAX_       Maximum Absolute Error             0.85          0.85
+  _SSE_       Sum of Squared Errors          18220.42      18263.67
+  _ASE_       Average Squared Error              0.13          0.13
+  _RASE_      Root Average Squared Error         0.37          0.37
+  _DIV_       Divisor for ASE               135644.00     135652.00
+  _DFT_       Total Degrees of Freedom       67822.00           .
+ 
+ 
+ 
+ 
+Classification Table
+ 
+Data Role=TRAIN Target Variable=DEP_DEL15 Target Label=' '
+ 
+                       Target        Outcome     Frequency       Total
+Target    Outcome    Percentage    Percentage      Count      Percentage
+ 
+  0          0         83.8544       99.6716       56460        83.2473
+  1          0         16.1456       97.2709       10871        16.0287
+  0          1         37.8819        0.3284         186         0.2742
+  1          1         62.1181        2.7291         305         0.4497
+ 
+ 
+Data Role=VALIDATE Target Variable=DEP_DEL15 Target Label=' '
+ 
+                       Target        Outcome     Frequency       Total
+Target    Outcome    Percentage    Percentage      Count      Percentage
+ 
+  0          0         83.8485       99.6434       56446        83.2218
+  1          0         16.1515       97.2714       10873        16.0307
+  0          1         39.8422        0.3566         202         0.2978
+  1          1         60.1578        2.7286         305         0.4497
+ 
+ 
+ 
+ 
+Event Classification Table
+ 
+Data Role=TRAIN Target=DEP_DEL15 Target Label=' '
+ 
+  False       True        False       True
+Negative    Negative    Positive    Positive
+ 
+  10871       56460        186         305
+ 
+ 
+Data Role=VALIDATE Target=DEP_DEL15 Target Label=' '
+ 
+  False       True        False       True
+Negative    Negative    Positive    Positive
+ 
+  10873       56446        202         305
+ 
+ 
+ 
+ 
+Assessment Score Rankings
+ 
+Data Role=TRAIN Target Variable=DEP_DEL15 Target Label=' '
+ 
+                                                                                           Mean
+                               Cumulative        %       Cumulative      Number of      Posterior
+Depth       Gain      Lift        Lift       Response    % Response    Observations    Probability
+ 
+   5     135.572    2.35572      2.35572      38.8185      38.8185         3392          0.38818
+  10      72.120    1.08650      1.72120      17.9038      28.3627         3391          0.17904
+  15      46.577    0.95484      1.46577      15.7343      24.1536         3391          0.15734
+  20      32.879    0.91780      1.32879      15.1239      21.8964         3391          0.15124
+  25      24.660    0.91780      1.24660      15.1239      20.5419         3391          0.15124
+  30      19.180    0.91780      1.19180      15.1239      19.6390         3391          0.15124
+  35      15.266    0.91780      1.15266      15.1239      18.9940         3391          0.15124
+  40      12.330    0.91780      1.12330      15.1239      18.5102         3391          0.15124
+  45      10.047    0.91780      1.10047      15.1239      18.1340         3391          0.15124
+  50       8.220    0.91780      1.08220      15.1239      17.8330         3391          0.15124
+  55       6.725    0.91780      1.06725      15.1239      17.5866         3392          0.15124
+  60       5.480    0.91780      1.05480      15.1239      17.3814         3391          0.15124
+  65       4.426    0.91780      1.04426      15.1239      17.2078         3391          0.15124
+  70       3.523    0.91780      1.03523      15.1239      17.0589         3391          0.15124
+  75       2.740    0.91780      1.02740      15.1239      16.9299         3391          0.15124
+  80       2.055    0.91780      1.02055      15.1239      16.8171         3391          0.15124
+  85       1.451    0.91780      1.01451      15.1239      16.7175         3391          0.15124
+  90       0.913    0.91780      1.00913      15.1239      16.6289         3391          0.15124
+  95       0.433    0.91780      1.00433      15.1239      16.5497         3391          0.15124
+ 100       0.000    0.91780      1.00000      15.1239      16.4784         3391          0.15124
+ 
+ 
+Data Role=VALIDATE Target Variable=DEP_DEL15 Target Label=' '
+ 
+                                                                                           Mean
+                               Cumulative        %       Cumulative      Number of      Posterior
+Depth       Gain      Lift        Lift       Response    % Response    Observations    Probability
+ 
+   5     128.805    2.28805      2.28805      37.7079      37.7079         3392          0.38886
+  10      67.755    1.06687      1.67755      17.5825      27.6467         3391          0.17971
+  15      44.152    0.96938      1.44152      15.9758      23.7568         3391          0.15780
+  20      31.164    0.92208      1.31164      15.1963      21.6164         3392          0.15124
+  25      23.374    0.92208      1.23374      15.1963      20.3325         3391          0.15124
+  30      18.180    0.92208      1.18180      15.1963      19.4766         3391          0.15124
+  35      14.469    0.92208      1.14469      15.1963      18.8650         3392          0.15124
+  40      11.687    0.92208      1.11687      15.1963      18.4065         3391          0.15124
+  45       9.523    0.92208      1.09523      15.1963      18.0498         3391          0.15124
+  50       7.792    0.92208      1.07792      15.1963      17.7645         3391          0.15124
+  55       6.375    0.92208      1.06375      15.1963      17.5310         3392          0.15124
+  60       5.194    0.92208      1.05194      15.1963      17.3364         3391          0.15124
+  65       4.195    0.92208      1.04195      15.1963      17.1718         3391          0.15124
+  70       3.339    0.92208      1.03339      15.1963      17.0307         3392          0.15124
+  75       2.597    0.92208      1.02597      15.1963      16.9084         3391          0.15124
+  80       1.948    0.92208      1.01948      15.1963      16.8014         3391          0.15124
+  85       1.375    0.92208      1.01375      15.1963      16.7070         3392          0.15124
+  90       0.866    0.92208      1.00866      15.1963      16.6231         3391          0.15124
+  95       0.410    0.92208      1.00410      15.1963      16.5480         3391          0.15124
+ 100       0.000    0.92208      1.00000      15.1963      16.4804         3391          0.15124
+ 
+ 
+ 
+ 
+Assessment Score Distribution
+ 
+Data Role=TRAIN Target Variable=DEP_DEL15 Target Label=' '
+ 
+ Posterior     Number                     Mean
+Probability      of      Number of     Posterior
+   Range       Events    Nonevents    Probability    Percentage
+ 
+ 0.60-0.65       217         123        0.63824         0.5013
+ 0.55-0.60        88          63        0.58278         0.2226
+ 0.40-0.45       299         424        0.41355         1.0660
+ 0.35-0.40       619        1134        0.35311         2.5847
+ 0.20-0.25       260         919        0.22053         1.7384
+ 0.15-0.20      9693       53983        0.15222        93.8869
+ 
+ 
+Data Role=VALIDATE Target Variable=DEP_DEL15 Target Label=' '
+ 
+ Posterior     Number                     Mean
+Probability      of      Number of     Posterior
+   Range       Events    Nonevents    Probability    Percentage
+ 
+ 0.60-0.65       218         145        0.63824         0.5352
+ 0.55-0.60        87          57        0.58278         0.2123
+ 0.40-0.45       284         424        0.41355         1.0438
+ 0.35-0.40       606        1133        0.35309         2.5639
+ 0.20-0.25       237         998        0.22053         1.8208
+ 0.15-0.20      9746       53891        0.15224        93.8239
